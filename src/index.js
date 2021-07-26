@@ -22,6 +22,6 @@ app.use(express.json());
 //vehicleInfo.vehicleInfoRoutes(app);
 vehicleActivity.vehicleActivityRoutes(app);
 
-app.listen(process.env.DB_PORT, () => {
-    console.log('app listening at port %s', 3000);
+app.listen(env.port, () => {
+    console.log('app listening at port %s', env.port);
 });

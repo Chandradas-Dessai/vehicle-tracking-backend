@@ -1,26 +1,23 @@
-// module.exports = {
-//     "port": 4000,
-//     "appEndpoint": "http://localhost:4000",
-//     "apiEndpoint": "http://localhost:4000",
-//     "environment": "dev",
-//     "db_name":"vehicle-app",
-//     "db_username":"postgres",
-//     "db_password":"root",
-//     "db_host":"localhost",
-//     "db_dialect":"postgres",
-// "dialectOptions": {
-//     "ssl": true
-//   }
-// };
-
 module.exports = {
-    "appEndpoint": "http://localhost:3000",
-    "apiEndpoint": "http://localhost:3000",
+    "port": 4000,
+    "appEndpoint": "http://localhost:4000",
+    "apiEndpoint": "http://localhost:4000",
     "environment": "dev",
-    "db_name":"d4a11q4ifmusoi",
-    "db_username":"ibgvqlpvxmzafz",
-    "db_password":"648ee74e3884d842b425724ccfc335a94cadafb7e366bd7164b8246327da0be9",
-    "db_host":"ec2-34-228-100-83.compute-1.amazonaws.com",
-    "port": process.env.DB_PORT,
-    "db_dialect":"postgres"
+    "db_name":"vehicle-app",
+    "db_username":"postgres",
+    "db_password":"root",
+    "db_host":"localhost",
+    "db_dialect":"postgres",
 };
+
+// module.exports = {
+//     "appEndpoint": process.env.APP_ENDPOINT,
+//     "apiEndpoint": process.env.API_ENDPOINT,
+//     "environment": process.env.ENVIRONMENT,
+//     "db_name": process.env.DB_DATABASE,
+//     "db_username": process.env.DB_USERNAME,
+//     "db_password":process.env.DB_PASSWORD,
+//     "db_host": process.env.DB_HOST,
+//     "port": process.env.DB_PORT,
+//     "db_dialect": process.env.DB_DIALECT
+// };
