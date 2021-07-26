@@ -22,6 +22,10 @@ app.use(express.json());
 //vehicleInfo.vehicleInfoRoutes(app);
 vehicleActivity.vehicleActivityRoutes(app);
 
-app.listen(env.port, () => {
-    console.log('app listening at port %s', env.port);
-});
+// app.listen(env.port, () => {
+//     console.log('app listening at port %s', env.port);
+// });
+
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
