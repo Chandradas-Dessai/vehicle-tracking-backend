@@ -1,8 +1,8 @@
 const env = require('./env');
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize(env.db_name, env.db_username, env.db_password, {
-    host: env.db_host,
+const sequelize = new Sequelize(process.env.DB_DATABASE, process.env.DB_USERNAME, process.env.DB_PASSWORD, {
+    host: process.env.DB_HOST,
     dialect: env.db_dialect,
     dialectOptions: {
         ssl: {
