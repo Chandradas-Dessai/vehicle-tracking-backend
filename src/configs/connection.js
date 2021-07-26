@@ -16,7 +16,7 @@ const Sequelize = require('sequelize');
 //     }
 // });
 
-const sequelize = new Sequelize(process.env.db_url, {
+const sequelize = new Sequelize(env.db_url, {
     dialect: env.db_dialect,
     protocol: env.db_protocol,
     dialectOptions: env.db_dialectOptions,
@@ -32,5 +32,5 @@ const sequelize = new Sequelize(process.env.db_url, {
         idle: 10000
     }
 });
-module.exports = sequelize;
+
 module.exports = sequelize;
