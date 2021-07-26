@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "root",
+    "database": "vehicle-app",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "root",
+    "database": "vehicle-app",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "root",
+    "database": "vehicle-app",
+    "host": "localhost",
+    "dialect": "postgres",
+    "use_env_variable": "DATABASE_URL"
+  }
+}
