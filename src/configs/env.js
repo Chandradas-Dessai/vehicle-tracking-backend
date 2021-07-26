@@ -14,9 +14,9 @@
 // };
 
 module.exports = {
-    "port": 3000,
-    // "appEndpoint": "http://localhost:3000",
-    // "apiEndpoint": "http://localhost:3000",
+    "port": 5432,
+    "appEndpoint": "https://vehicle-node-backend.herokuapp.com",
+    "apiEndpoint": "https://vehicle-node-backend.herokuapp.com",
     "environment": "dev",
     "db_name":"d4a11q4ifmusoi",
     "db_username":"ibgvqlpvxmzafz",
