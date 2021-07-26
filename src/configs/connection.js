@@ -16,21 +16,17 @@ const Sequelize = require('sequelize');
 //     }
 // });
 
-const sequelize = new Sequelize(env.db_url, {
-    dialect: env.db_dialect,
-    protocol: env.db_protocol,
-    dialectOptions: env.db_dialectOptions,
-    define: {
-        charset: 'utf8',
-        collate: 'utf8_general_ci',
-        timestamps: true
-    },
+const sequelize = new Sequelize(env.database, env.username, env.password, {
+    host: env.host,
+    dialect: env.dialect,
+    operatorsAliases: false,
+   
     pool: {
-        max: 5,
-        min: 0,
-        acquire: 30000,
-        idle: 10000
+      max: env.max,
+      min: env.pool.min,
+      acquire: env.pool.acquire,
+      idle: env.pool.idle
     }
-});
-
+  });
+  
 module.exports = sequelize;
